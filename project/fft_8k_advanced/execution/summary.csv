@@ -1,0 +1,133 @@
+Profile Summary
+Generated on: 2023-07-29 10:45:51
+Msec since Epoch: 1690598751619
+Profiled application: host.exe
+Target platform: Xilinx
+Tool version: 2022.2
+XRT build version: 2.14.384
+Build version branch: 2022.2
+Build version hash: 090bb050d570d2b668477c3bd0f979dc3a34b9db
+Build version date: N/A
+Target devices: xilinx_vck5000_gen4x8_qdma_base_2-0
+Flow mode: System Run
+
+Compute Unit Utilization
+Device,Compute Unit,Kernel,Global Work Size,Local Work Size,Number Of Calls,Dataflow Execution,Max Overlapping Executions,Dataflow Acceleration,Total Time (ms),Minimum Time (ms),Average Time (ms),Maximum Time (ms),Clock Frequency (MHz),
+xilinx_vck5000_gen4x8_qdma_base_2-0,mm2s_fft_0,mm2s,1:1:1,1:1:1,1,Yes,1,1.000000x,0.0123,0.0123033,0.0123,0.0123033,300,
+xilinx_vck5000_gen4x8_qdma_base_2-0,s2mm_fft_0,s2mm,1:1:1,1:1:1,1,Yes,1,1.000000x,0.00998,0.00998333,0.00998,0.00998333,300,
+
+
+
+
+Data Transfer: Streams
+Device,Master Port,Master Kernel Arguments,Slave Port,Slave Kernel Arguments,Number Of Transfers,Transfer Rate (MB/s),Average Size (KB),Link Utilization (%),Link Starve (%),Link Stall (%),
+xilinx_vck5000_gen4x8_qdma_base_2-0,mm2s_fft_0/s0,s0,ai_engine_0/S00_AXIS,S00_AXIS,1,0.0424374,2.048,0.00176823,99.9982,2.07214e-05,
+xilinx_vck5000_gen4x8_qdma_base_2-0,mm2s_fft_0/s1,s1,ai_engine_0/S01_AXIS,S01_AXIS,1,0.0424283,2.048,0.00176785,99.9982,2.07169e-05,
+xilinx_vck5000_gen4x8_qdma_base_2-0,mm2s_fft_0/s2,s2,ai_engine_0/S02_AXIS,S02_AXIS,1,0.0424189,2.048,0.00176745,99.9982,2.07123e-05,
+xilinx_vck5000_gen4x8_qdma_base_2-0,mm2s_fft_0/s3,s3,ai_engine_0/S03_AXIS,S03_AXIS,1,0.0424093,2.048,0.00176705,99.9982,2.07077e-05,
+xilinx_vck5000_gen4x8_qdma_base_2-0,mm2s_fft_0/s4,s4,ai_engine_0/S04_AXIS,S04_AXIS,1,0.0423999,2.048,0.00176666,99.9982,2.07031e-05,
+xilinx_vck5000_gen4x8_qdma_base_2-0,mm2s_fft_0/s5,s5,ai_engine_0/S05_AXIS,S05_AXIS,1,0.0423906,2.048,0.00176628,99.9982,2.06985e-05,
+xilinx_vck5000_gen4x8_qdma_base_2-0,mm2s_fft_0/s6,s6,ai_engine_0/S06_AXIS,S06_AXIS,1,0.0423812,2.048,0.00176588,99.9982,2.06939e-05,
+xilinx_vck5000_gen4x8_qdma_base_2-0,mm2s_fft_0/s7,s7,ai_engine_0/S07_AXIS,S07_AXIS,1,0.042372,2.048,0.0017655,99.9982,2.06895e-05,
+xilinx_vck5000_gen4x8_qdma_base_2-0,ai_engine_0/M00_AXIS,M00_AXIS,s2mm_fft_0/s,s,1,0.339681,16.384,0.0141534,99.9502,0.0355977,
+
+Data Transfer: Kernels to Global Memory
+Device,Compute Unit/Port Name,Kernel Arguments,Memory Resources,Transfer Type,Number Of Transfers,Transfer Rate (MB/s),Bandwidth Utilization With Respect To Current Port Configuration (%),Bandwidth Utilization With Respect To Ideal Port Configuration (%),Maximum Achievable BW on Current Port Configuration (MB/s),Maximum Theoretical BW on Ideal Port Configuration (MB/s),Average Size (KB),Average Latency (ns),
+xilinx_vck5000_gen4x8_qdma_base_2-0,mm2s_fft_0/m_axi_gmem,,DDR,READ,128,4670.02,97.2922,24.323,4800,19200,0.256,231.547,
+xilinx_vck5000_gen4x8_qdma_base_2-0,s2mm_fft_0/m_axi_gmem,,DDR,WRITE,128,3676.29,76.5894,19.1473,4800,19200,0.256,43.5469,
+
+Top Data Transfer: Kernels to Global Memory
+Device,Compute Unit,Number of Transfers,Average Bytes per Transfer,Transfer Efficiency (%),Total Data Transfer (MB),Total Write (MB),Total Read (MB),Total Transfer Rate (MB/s),
+xilinx_vck5000_gen4x8_qdma_base_2-0,mm2s_fft_0,128,256,6.25,0.032768,0,0.032768,4670.02,
+xilinx_vck5000_gen4x8_qdma_base_2-0,s2mm_fft_0,128,256,6.25,0.032768,0.032768,0,3676.29,
+
+
+
+TITLE:HAL API Calls
+SECTION:API Calls,HAL API Calls
+COLUMN:<html>API Name</html>,string,Name of HAL XRT API,
+COLUMN:<html>Number<br>Of Calls</html>,int,Number of calls to API,
+COLUMN:<html>Total<br>Time (ms)</html>,float,Total execution time (in ms),
+COLUMN:<html>Minimum<br>Time (ms)</html>,float,Minimum execution time (in ms),
+COLUMN:<html>Average<br>Time (ms)</html>,float,Average execution time (in ms),
+COLUMN:<html>Maximum<br>Time (ms)</html>,float,Maximum execution time (in ms),
+ENTRY:xclAllocBO,3,160.361,0.006615,53.4536,160.337,
+ENTRY:xclAllocUserPtrBO,2,0.036487,0.011604,0.0182435,0.024883,
+ENTRY:xclClose,2,37.1658,0.842454,18.5829,36.3233,
+ENTRY:xclExecWait,2,0.158988,0.03383,0.079494,0.125158,
+ENTRY:xclFreeBO,4,0.081316,0.009049,0.020329,0.027795,
+ENTRY:xclGetBOProperties,3,0.0173,0.001488,0.00576667,0.0139,
+ENTRY:xclMapBO,3,0.039707,0.003217,0.0132357,0.030045,
+ENTRY:xclOpen,3,715.485,0.020191,238.495,699.719,
+ENTRY:xclSyncBO,4,76.4403,0.117937,19.1101,75.9866,
+
+Guidance Parameters
+Parameter,Element,Value,
+CU_CALLS,xilinx_vck5000_gen4x8_qdma_base_2-0|mm2s_fft_0,1,
+CU_CALLS,xilinx_vck5000_gen4x8_qdma_base_2-0|s2mm_fft_0,1,
+NUM_MONITORS,xilinx_vck5000_gen4x8_qdma_base_2-0|XCL_PERF_MON_MEMORY|2,2,
+NUM_MONITORS,xilinx_vck5000_gen4x8_qdma_base_2-0|XCL_PERF_MON_ACCEL|2,2,
+NUM_MONITORS,xilinx_vck5000_gen4x8_qdma_base_2-0|XCL_PERF_MON_STR|9,9,
+MEMORY_USAGE,xilinx_vck5000_gen4x8_qdma_base_2-0|MC_NOC0,1,
+MEMORY_USAGE,xilinx_vck5000_gen4x8_qdma_base_2-0|BRAM,1,
+PLRAM_DEVICE,all,0,
+HBM_DEVICE,all,0,
+KDMA_DEVICE,all,0,
+P2P_DEVICE,all,0,
+PORT_BIT_WIDTH,mm2s_fft_0/m_axi_gmem,128,
+PORT_BIT_WIDTH,s2mm_fft_0/m_axi_gmem,128,
+KERNEL_COUNT,mm2s,1,
+KERNEL_COUNT,s2mm,1,
+TRACE_MEMORY,all,TS2MM,
+TRACE_BUFFER_FULL,xilinx_vck5000_gen4x8_qdma_base_2-0,false
+MEMORY_TYPE_BIT_WIDTH,xilinx_vck5000_gen4x8_qdma_base_2-0|HBM,256,
+MEMORY_TYPE_BIT_WIDTH,xilinx_vck5000_gen4x8_qdma_base_2-0|DDR,512,
+MEMORY_TYPE_BIT_WIDTH,xilinx_vck5000_gen4x8_qdma_base_2-0|PLRAM,512,
+APPLICATION_RUN_TIME_MS,all,1236.14,
+TOTAL_KERNEL_RUN_TIME_MS,all,0.04167,
+XRT_INI_SETTING,opencl_trace,0,Generation of trace of OpenCL APIs and memory transfers
+XRT_INI_SETTING,device_counters,0,Hardware counters added to summary file
+XRT_INI_SETTING,host_trace,0,Enable the top level of host trace
+XRT_INI_SETTING,native_xrt_trace,0,Generation of Native XRT API function trace
+XRT_INI_SETTING,xrt_trace,1,Generation of hardware SHIM function trace
+XRT_INI_SETTING,device_trace,accel,Collection of data from PL monitors and added to summary and trace
+XRT_INI_SETTING,power_profile,0,Polling of power data during execution of application
+XRT_INI_SETTING,power_profile_interval_ms,20,Interval for reading power data (in ms)
+XRT_INI_SETTING,stall_trace,off,Enables hardware generation of stalls in compute units
+XRT_INI_SETTING,trace_buffer_size,500M,Size of buffer to allocate for trace (memory offload only)
+XRT_INI_SETTING,verbosity,4,Verbosity level
+XRT_INI_SETTING,continuous_trace,0,Continuous offloading of trace from memory to host
+XRT_INI_SETTING,trace_buffer_offload_interval_ms,10,Interval for reading of device data to host (in ms)
+XRT_INI_SETTING,trace_file_dump_interval_s,5,Interval for dumping files to host (in s)
+XRT_INI_SETTING,lop_trace,0,Generation of lower overhead OpenCL trace. Should not be used with other OpenCL options.
+XRT_INI_SETTING,debug_mode,batch,Debug mode (emulation only)
+XRT_INI_SETTING,aie_trace,0,Generation of AI Engine trace
+XRT_INI_SETTING,aie_trace_buffer_size,8M,Size of buffer to allocate for AI Engine trace
+XRT_INI_SETTING,aie_trace_metrics,functions,Configuration level used for AI Engine trace
+XRT_INI_SETTING,aie_trace_periodic_offload,1,Periodic offloading of aie trace from memory to host
+XRT_INI_SETTING,aie_trace_buffer_offload_interval_ms,10,Interval for reading of device aie trace data to host (in ms)
+XRT_INI_SETTING,aie_trace_file_dump_interval_s,5,Interval for dumping aie trace files to host (in s)
+XRT_INI_SETTING,aie_profile,0,Generation of AI Engine profiling
+XRT_INI_SETTING,aie_profile_interval_us,1000,Interval for reading AI Engine profile counters (in us)
+XRT_INI_SETTING,aie_profile_core_metrics,,Metric set for AI Engine core modules
+XRT_INI_SETTING,aie_profile_memory_metrics,,Metric set for AI Engine memory modules
+XRT_INI_SETTING,aie_profile_interface_metrics,,Metric set for AI Engine interface tiles
+XRT_INI_SETTING,aie_status,0,Generation of AI Engine debug/status
+XRT_INI_SETTING,aie_status_interval_us,1000,Interval for reading AI Engine debug/status registers (in us)
+XRT_INI_SETTING,vitis_ai_profile,0,Generation of Vitis AI summary and trace (Vitis AI designs only)
+XRT_INI_SETTING,AIE_profile_settings.interval_us,1000,Interval for reading AI Engine profile counters (in us)
+XRT_INI_SETTING,AIE_profile_settings.graph_based_aie_metrics,,Metric set for profiling AI Engine processor modules per graph
+XRT_INI_SETTING,AIE_profile_settings.graph_based_aie_memory_metrics,,Metric set for profiling AI Engine memory modules per graph
+XRT_INI_SETTING,AIE_profile_settings.tile_based_aie_metrics,,Metric set for profiling AI Engine processor modules per tile
+XRT_INI_SETTING,AIE_profile_settings.tile_based_aie_memory_metrics,,Metric set for profiling AI Engine memory modules per tile
+XRT_INI_SETTING,AIE_profile_settings.tile_based_interface_tile_metrics,,Metric set for profiling AI Engine interface tiles per tile
+XRT_INI_SETTING,AIE_trace_settings.start_type,time,Type of delay to use in AI Engine trace
+XRT_INI_SETTING,AIE_trace_settings.start_time,0,Start delay for AI Engine trace
+XRT_INI_SETTING,AIE_trace_settings.start_iteration,1,Iteration count when graph type delay is used in AI Engine Trace
+XRT_INI_SETTING,AIE_trace_settings.graph_based_aie_tile_metrics,,Configuration level used for AI Engine trace per graph
+XRT_INI_SETTING,AIE_trace_settings.tile_based_aie_tile_metrics,,Configuration level used for AI Engine trace per tile
+XRT_INI_SETTING,AIE_trace_settings.buffer_size,8M,Size of buffer to allocate for AI Engine trace
+XRT_INI_SETTING,AIE_trace_settings.periodic_offload,1,Periodic offloading of AI Engine trace from memory to host
+XRT_INI_SETTING,AIE_trace_settings.reuse_buffer,0,Enable use of circular buffer for AI Engine trace
+XRT_INI_SETTING,AIE_trace_settings.buffer_offload_interval_us,100,Interval for reading of device AI Engine trace data to host (in us)
+XRT_INI_SETTING,AIE_trace_settings.file_dump_interval_s,5,Interval for dumping AI Engine trace files to host (in s)

@@ -1,0 +1,103 @@
+HEADER
+VTF File Version,1.1
+VTF File Type,1
+PID,4731
+Generated on,2023-07-29 10:45:51
+Resolution,ms
+Min Resolution,ns
+Trace Version,1.1
+TraceID,4732
+XRT  Version,2.14.384
+Tool Version,2022.2
+Platform,xilinx_vck5000_gen4x8_qdma_base_2
+Target,System Run
+
+STRUCTURE
+Group_Start,xilinx_vck5000_gen4x8_qdma_base_2
+Group_Start,fft.xclbin
+Group_Start,Compute Unit mm2s_fft_0,Activity in accelerator mm2s:mm2s_fft_0
+Dynamic_Row_Summary,1,Executions,Execution in accelerator mm2s_fft_0
+Group_Start,m_axi_gmem-DDR(mem),Data Transfers between mm2s_fft_0 and Global Memory over read and write channels of mm2s_fft_0/m_axi_gmem-DDR
+Static_Row,2,Read Channel,Read Data Transfers 
+Static_Row,3,Write Channel,Write Data Transfers 
+Group_End,m_axi_gmem-DDR(mem)
+Group_Start,mm2s_fft_0/s0-ai_engine_0/S00_AXIS,AXI Stream transaction over mm2s_fft_0/s0-ai_engine_0/S00_AXIS
+Static_Row,4,Stream Activity,AXI Stream transactions over mm2s_fft_0/s0-ai_engine_0/S00_AXIS
+Static_Row,5,Link Stall
+Static_Row,6,Link Starve
+Group_End,mm2s_fft_0/s0-ai_engine_0/S00_AXIS
+Group_Start,mm2s_fft_0/s1-ai_engine_0/S01_AXIS,AXI Stream transaction over mm2s_fft_0/s1-ai_engine_0/S01_AXIS
+Static_Row,7,Stream Activity,AXI Stream transactions over mm2s_fft_0/s1-ai_engine_0/S01_AXIS
+Static_Row,8,Link Stall
+Static_Row,9,Link Starve
+Group_End,mm2s_fft_0/s1-ai_engine_0/S01_AXIS
+Group_Start,mm2s_fft_0/s2-ai_engine_0/S02_AXIS,AXI Stream transaction over mm2s_fft_0/s2-ai_engine_0/S02_AXIS
+Static_Row,10,Stream Activity,AXI Stream transactions over mm2s_fft_0/s2-ai_engine_0/S02_AXIS
+Static_Row,11,Link Stall
+Static_Row,12,Link Starve
+Group_End,mm2s_fft_0/s2-ai_engine_0/S02_AXIS
+Group_Start,mm2s_fft_0/s3-ai_engine_0/S03_AXIS,AXI Stream transaction over mm2s_fft_0/s3-ai_engine_0/S03_AXIS
+Static_Row,13,Stream Activity,AXI Stream transactions over mm2s_fft_0/s3-ai_engine_0/S03_AXIS
+Static_Row,14,Link Stall
+Static_Row,15,Link Starve
+Group_End,mm2s_fft_0/s3-ai_engine_0/S03_AXIS
+Group_Start,mm2s_fft_0/s4-ai_engine_0/S04_AXIS,AXI Stream transaction over mm2s_fft_0/s4-ai_engine_0/S04_AXIS
+Static_Row,16,Stream Activity,AXI Stream transactions over mm2s_fft_0/s4-ai_engine_0/S04_AXIS
+Static_Row,17,Link Stall
+Static_Row,18,Link Starve
+Group_End,mm2s_fft_0/s4-ai_engine_0/S04_AXIS
+Group_Start,mm2s_fft_0/s5-ai_engine_0/S05_AXIS,AXI Stream transaction over mm2s_fft_0/s5-ai_engine_0/S05_AXIS
+Static_Row,19,Stream Activity,AXI Stream transactions over mm2s_fft_0/s5-ai_engine_0/S05_AXIS
+Static_Row,20,Link Stall
+Static_Row,21,Link Starve
+Group_End,mm2s_fft_0/s5-ai_engine_0/S05_AXIS
+Group_Start,mm2s_fft_0/s6-ai_engine_0/S06_AXIS,AXI Stream transaction over mm2s_fft_0/s6-ai_engine_0/S06_AXIS
+Static_Row,22,Stream Activity,AXI Stream transactions over mm2s_fft_0/s6-ai_engine_0/S06_AXIS
+Static_Row,23,Link Stall
+Static_Row,24,Link Starve
+Group_End,mm2s_fft_0/s6-ai_engine_0/S06_AXIS
+Group_Start,mm2s_fft_0/s7-ai_engine_0/S07_AXIS,AXI Stream transaction over mm2s_fft_0/s7-ai_engine_0/S07_AXIS
+Static_Row,25,Stream Activity,AXI Stream transactions over mm2s_fft_0/s7-ai_engine_0/S07_AXIS
+Static_Row,26,Link Stall
+Static_Row,27,Link Starve
+Group_End,mm2s_fft_0/s7-ai_engine_0/S07_AXIS
+Group_End,mm2s_fft_0
+Group_Start,Compute Unit s2mm_fft_0,Activity in accelerator s2mm:s2mm_fft_0
+Dynamic_Row_Summary,28,Executions,Execution in accelerator s2mm_fft_0
+Group_Start,m_axi_gmem-DDR(mem),Data Transfers between s2mm_fft_0 and Global Memory over read and write channels of s2mm_fft_0/m_axi_gmem-DDR
+Static_Row,29,Read Channel,Read Data Transfers 
+Static_Row,30,Write Channel,Write Data Transfers 
+Group_End,m_axi_gmem-DDR(mem)
+Group_Start,ai_engine_0/M00_AXIS-s2mm_fft_0/s,AXI Stream transaction over ai_engine_0/M00_AXIS-s2mm_fft_0/s
+Static_Row,31,Stream Activity,AXI Stream transactions over ai_engine_0/M00_AXIS-s2mm_fft_0/s
+Static_Row,32,Link Stall
+Static_Row,33,Link Starve
+Group_End,ai_engine_0/M00_AXIS-s2mm_fft_0/s
+Group_End,s2mm_fft_0
+Group_End,fft.xclbin
+Group_End,xilinx_vck5000_gen4x8_qdma_base_2
+
+MAPPING
+11,mm2s
+12,mm2s_fft_0
+13,s2mm
+14,s2mm_fft_0
+3,xclAllocBO
+7,xclAllocUserPtrBO
+10,xclClose
+8,xclExecWait
+9,xclFreeBO
+6,xclGetBOProperties
+2,xclLoadXclBin
+4,xclMapBO
+1,xclOpen
+5,xclSyncBO
+
+EVENTS
+61,0,1070.908629,1,KERNEL,11,12
+62,61,1070.920929,1,KERNEL,11,12
+63,0,1070.940319,28,KERNEL,13,14
+64,63,1070.950299,28,KERNEL,13,14
+
+DEPENDENCIES
+
