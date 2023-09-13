@@ -1,10 +1,12 @@
 # CCFSys Custom Computing Challenge 2023: Finals
 
 > Participating School: East China Normal University
+>
+> Team Members: Zhuoyan Bai （白卓岩）, Yixuan Du（堵仪萱）, Longshan Xu（徐珑珊）
 > 
-> Advisor: Mr. Xu Fei
-> 
-> Team Members: Bai Zhuoyan, Du Yixuan, Xu Longshan
+> Advisor: Dr. Fei Xu
+>
+> Result: Our Team was awarded the **first prize** in [CCFSys Customized Computing Challenge (CCC) 2023](https://ccfsys-ccc.github.io/2023/results/). 
 
 ## Project Overview
 
@@ -50,10 +52,10 @@ source ./hacc_demo/env/vck5000_env
 ./hacc_demo/env/vck5000_exit
 ```
 
-After execution, the `.ipynb` file in the `sources/fft_8k_advanced/notebook` folder can be used to visualize the output results and verify.
+After execution, the `.ipynb` file in the `sources/fft_8k_advanced/notebook` folder can be used to visualize the output results and verify them.
 
 ## Directory Description
-The main directory structure for the finals submission is as follows:
+The main directory structure for the final submission is as follows:
 
 ```
 CCC2023
@@ -72,3 +74,7 @@ CCC2023
 │   └── fft_8k.ipynb
 └── README.md
 ```
+
+## Design Document
+
+Zhuoyan Bai, Yixuan Du, Longshan Xu, Fei Xu, "[基于AIE的快速傅里叶变换的算法优化与实现](https://github.com/icloud-ecnu/CCC2023/blob/main/pdf/CCFSys_CCC_2023.pdf)," in: CCFSys CCC 2023. Nanchang, China, August 4-5, 2023.
