@@ -1,6 +1,6 @@
 # CCFSys Custom Computing Challenge 2023: Finals
 
-> Participating School: East China Normal University
+> Participating School: East China Normal University (飞天小女警队)
 >
 > Team Members: Zhuoyan Bai （白卓岩）, Yixuan Du（堵仪萱）, Longshan Xu（徐珑珊）
 > 
