@@ -77,4 +77,4 @@ CCC2023
 
 ## Design Document
 
-Zhuoyan Bai, Yixuan Du, Longshan Xu, Fei Xu, "[基于AIE的快速傅里叶变换的算法优化与实现](https://github.com/icloud-ecnu/CCC2023/blob/main/pdf/CCFSys_CCC_2023.pdf)," in: CCFSys CCC 2023. Nanchang, China, August 4-5, 2023.
+Zhuoyan Bai, Yixuan Du, Longshan Xu, Fei Xu, "[基于AIE的快速傅里叶变换的算法优化与实现](https://github.com/icloud-ecnu/CCC2023/blob/main/pdf/CCFSys_CCC_2023.pdf)," in: CCFSys CCC 2023. Nanchang, China, August 4-5, 2023. [[PPT](https://github.com/icloud-ecnu/CCC2023/blob/main/pdf/CCC2023-ECNU-EN.pdf)]
